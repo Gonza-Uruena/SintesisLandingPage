@@ -13,7 +13,6 @@
   "dependencies": {
     "@nuxt/eslint": "^0.6.0",
     "@nuxt/fonts": "^0.10.2",
-    "@vueuse/motion": "^2.2.6",
     "@vueuse/nuxt": "^11.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",

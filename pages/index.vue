@@ -22,19 +22,25 @@
     </AppSection>
     <!-- --------------------------------------------------------------------------- -->
 
-    <AppSection class="bg-[#161616]">
-      <div class="w-full mt-10 font-title">
-        <h1>Hola soy un titulo</h1>
-      </div>
-      <div class="w-60 mt-10 self-start">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-        perferendis velit praesentium atque unde at alias commodi corrupti illum
-        modi!
+    <AppSection class="bg-[#161616] text-white min-h-screen">
+      <div class="flex flex-col justify-center items-center w-full h-full mt-10 font-title">
+        <h1 class="text-2xl md:text-5xl lg:text-6xl font-bold font-title">
+          Más allá de diseño: <br> Esencia y transformación.
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 place-items-center">
+          <div class="">
+           hola
+          </div>
+          <div class="">
+           hola
+          </div>
+        </div>
       </div>
     </AppSection>
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+</script>
 
 <style></style>

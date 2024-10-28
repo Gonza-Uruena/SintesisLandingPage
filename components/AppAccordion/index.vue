@@ -1,16 +1,6 @@
 <template>
   <Accordion class="mt-4" type="single" collapsible>
     <AppAccordionItem
-    v-motion="{
-      initial: {
-        y: 100,
-        opacity: 0
-      },
-      enter: {
-        y: 0,
-        opacity: 1
-      }
-    }"
       class="text-white"
       value="1"
       title="Diseño"
@@ -23,19 +13,6 @@
     </AppAccordionItem>
 
     <AppAccordionItem
-    v-motion="{
-      initial: {
-        y: 100,
-        opacity: 0
-      },
-      enter: {
-        y: 0,
-        opacity: 1,
-        transition: {
-      delay: 100,
-    },
-      }
-    }"
       class="text-black -mt-1"
       value="2"
       title="Marketing"
@@ -48,19 +25,6 @@
     </AppAccordionItem>
 
     <AppAccordionItem
-    v-motion="{
-      initial: {
-        y: 100,
-        opacity: 0
-      },
-      enter: {
-        y: 0,
-        opacity: 1,
-        transition: {
-      delay: 200,
-    },
-      }
-    }"
       class="text-white -mt-1"
       value="3"
       title="Backend"
@@ -88,19 +52,6 @@
     </AppAccordionItem>
 
     <AppAccordionItem
-    v-motion="{
-      initial: {
-        y: 100,
-        opacity: 0
-      },
-      enter: {
-        y: 0,
-        opacity: 1,
-        transition: {
-      delay: 300,
-    },
-      }
-    }"
       class="text-black -mt-1"
       custom-classes="rounded-b-md"
       value="34"
@@ -116,7 +67,6 @@
 </template>
 
 <script lang="ts" setup>
-
 </script>
 
 <style></style>

@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     '@nuxt/eslint',
     '@vueuse/nuxt',
-    '@vueuse/motion/nuxt',
     '@nuxt/fonts'
   ],
   shadcn: {
