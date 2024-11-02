@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     '@nuxt/eslint',
     '@vueuse/nuxt',
-    '@nuxt/fonts'
+    '@nuxt/fonts',
   ],
   shadcn: {
     /**
@@ -19,5 +19,10 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './components/ui'
-  }
+  },
+  fonts: {
+    defaults: {
+      weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    }
+  },
 })

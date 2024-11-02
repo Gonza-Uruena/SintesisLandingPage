@@ -5,17 +5,25 @@
   >
     <div
       class="w-16 h-16 rounded-full flex items-center justify-center cursor-pointer"
-      :class="isHovered ? 'bg-[#6d6bd4]' : 'bg-[#807EEC]'"
+      :class="isHovered ? 'bg-[#6664da]' : 'bg-[#807EEC]'"
     >
       <ArrowRight class="w-8 h-8" />
     </div>
     <div
-      class="absolute top-1/2 -translate-y-1/2 left-12 w-12 h-12 rounded-full after:w-8 after:h-9 after:rounded-full after:bg-black after:absolute after:-bottom-7 after:left-1 before:w-8 before:h-9 before:rounded-full before:bg-black before:absolute before:-top-7 before:left-1"
-      :class="isHovered ? 'bg-[#6d6bd4]' : 'bg-[#807EEC]'"
-    />
+      class="pinch-effect absolute top-1/2 -translate-y-1/2 left-12 w-12 h-12 rounded-full"
+    >
+      <div class="w-full h-full pinch-effect-layer-1">
+        <div class="w-full h-full pinch-effect-layer-2">
+          <div
+            class="w-full h-full rounded-full relative z-10"
+            :class="isHovered ? 'bg-[#6664da]' : 'bg-[#807EEC]'"
+          />
+        </div>
+      </div>
+    </div>
     <div
-      class="bg-[#807EEC] text-white font-title text-xl py-5 px-14 rounded-full"
-      :class="isHovered ? 'bg-[#6d6bd4]' : 'bg-[#807EEC]'"
+      class="text-white font-title text-xl py-5 px-14 rounded-full"
+      :class="isHovered ? 'bg-[#6664da]' : 'bg-[#807EEC]'"
     >
       <slot />
     </div>
@@ -31,4 +39,21 @@ const isHovered = useElementHover(buttonHover);
 
 </script>
 
-<style></style>
+<style scoped>
+.pinch-effect-layer-1 {
+  mask-image: radial-gradient(circle at 40% -10%, transparent 25%, black 5%);
+  -webkit-mask-image: radial-gradient(
+    circle at 40% -10%,
+    transparent 25%,
+    black 5%
+  );
+}
+.pinch-effect-layer-2 {
+  mask-image: radial-gradient(circle at 40% 110%, transparent 25%, black 5%);
+  -webkit-mask-image: radial-gradient(
+    circle at 40% 110%,
+    transparent 25%,
+    black 5%
+  );
+}
+</style>

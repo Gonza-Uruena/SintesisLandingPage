@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full h-screen flex justify-center items-center flex-col ">
+  <section class="w-full h-auto min-h-screen flex justify-center items-center flex-col">
     <slot />
   </section>
 </template>

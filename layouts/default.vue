@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-auto">
     <!---- AppNavBar ----->
-    <div class="fixed w-full top-0 left-0 h-16 z-10">
+    <div class="fixed w-full top-0 left-0 h-16 z-50">
       <AppNavBar :items="navItems" />
     </div>
 
