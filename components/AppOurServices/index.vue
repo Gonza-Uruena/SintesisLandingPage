@@ -12,7 +12,7 @@
     </div>
 
     <!-- Divider -->
-    <div class="absolute top-0 left-1/2 translate-x-[-50%] w-0.5 h-full bg-white bg-gradient-to-b  from-30% from-section-background via-white to-70% to-section-background" />
+    <div class="absolute top-0 left-1/2 translate-x-[-50%] w-0.5 h-full bg-white bg-gradient-to-b  from-30% from-section-background-dark via-white to-70% to-section-background-dark" />
     <!-- Carousel -->
     <div
       class="w-1/2 h-full flex justify-center items-center gap-4"

@@ -1,6 +1,6 @@
 <template>
   <form
-    class="space-y-12 max-w-lg mx-auto w-full"
+    class="space-y-12 max-w-lg w-full"
     @submit.prevent="handleSubmit"
   >
     <div>
@@ -38,12 +38,10 @@
         placeholder="Queremos conocer qué te mueve y que te inspira"
       />
     </div>
-    <div class="">
       <AppButton 
     @click="handleSubmit"> 
       Transformemos 
     </AppButton>
-    </div>
 
   </form>
 </template>

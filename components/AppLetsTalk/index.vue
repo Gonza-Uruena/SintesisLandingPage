@@ -7,7 +7,7 @@
       <p class="text-xl pr-10 font-accent font-medium">
         Queremos conocerte a fondo y entender cómo podemos ayudarte a dar vida a ese sueño. 
       </p>
-      <div class="mt-4 -ml-8">
+      <div class="mt-4">
         <AppForm />
       </div>
 

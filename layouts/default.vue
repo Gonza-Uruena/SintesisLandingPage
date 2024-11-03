@@ -21,7 +21,6 @@
 
 <script lang="ts" setup>
 const navItems = [
-  { label: 'Bienvenido', href: '/' },
   { label: 'Proyectos en Acción', href: '/' },	
   { label: 'Nuestro ADN', href: '/' },
   { label: 'Soluciones Creativas', href: '/' },

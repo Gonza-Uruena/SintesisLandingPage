@@ -6,12 +6,12 @@
           <img src="/public/img/LogoDesktop.png" alt="Logo" class="w-30 h-12">
         </div>
 
-        <div class="flex space-x-4 ml-24">
+        <div class="flex space-x-4 ml-32 bg-section-background-light rounded-full px-16 py-2">
           <a
             v-for="(item, index) in items"
             :key="index"
             :href="item.href"
-            class="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+            class="text-black hover:bg-sintesis-light-blue hover:rounded-full px-3 py-2 text-sm font-medium"
           >
             {{ item.label }}
           </a>

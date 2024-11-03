@@ -43,7 +43,7 @@
 
         <!-- Hablemos -->
 
-    <AppSection class=" bg-section-background-light text-black px-32">
+    <AppSection class=" bg-section-background-light text-black px-32 mb-20">
       <AppLetsTalk />
     </AppSection>
   </div>

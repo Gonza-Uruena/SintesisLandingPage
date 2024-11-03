@@ -3,10 +3,10 @@
     <h1 class="self-start font-title font-bold text-3xl leading-snug">
       {{props.title}}
     </h1>
-    <p class="self-start text-lg pr-60">
+    <p class="self-start text-lg">
       {{props.description}}
     </p>
-    <div class="self-start w-full flex flex-wrap gap-10">
+    <div class="self-start w-full flex flex-wrap gap-4">
       <div
         v-for="tag in props.tags"
         :key="tag as string"
