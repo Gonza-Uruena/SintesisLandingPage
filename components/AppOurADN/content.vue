@@ -1,8 +1,5 @@
 <template>
-  <!--   <h1 class="text-black text-7xl font-title font-semibold text-center">
-      Los que <br> transforman
-    </h1> -->
-  <div class="w-full h-full flex justify-center items-center">
+  <div class="w-full h-screen flex justify-center items-center">
     <div class="w-3/6 h-full flex flex-col justify-center gap-8 pr-10">
       <h1 class="text-black text-5xl leading-tight font-title font-semibold">
         Los que <br>

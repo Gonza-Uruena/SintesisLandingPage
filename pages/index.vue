@@ -25,30 +25,26 @@
     </AppSection>
     <!-- Proyectos en acción -->
 
-    <AppSection class="bg-[#161616] text-white px-8 mb-20">
+    <AppSection class="bg-section-background-dark text-white px-8 mb-20">
       <AppOurWorks />
     </AppSection>
 
     <!-- Nuestro ADN -->
 
-    <AppSection class="bg-white text-white px-8 mb-20">
+    <AppSection class="bg-section-background-light text-white px-8 mb-20">
       <AppOurADN />
     </AppSection>
 
     <!-- Nuestras Crisalidas -->
 
-    <AppSection class="bg-[#161616] text-white">
-      <div>
-        Section
-      </div>
+    <AppSection class="bg-section-background-dark h-screen text-white px-8">
+      <AppOurServices />
     </AppSection>
 
         <!-- Hablemos -->
 
-        <AppSection class="bg-[#161616] text-white">
-      <div>
-        Section
-      </div>
+    <AppSection class=" bg-section-background-light text-black px-32">
+      <AppLetsTalk />
     </AppSection>
   </div>
 </template>

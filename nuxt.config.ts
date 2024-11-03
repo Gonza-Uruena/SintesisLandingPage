@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@vueuse/nuxt',
     '@nuxt/fonts',
+    'nuxt-swiper',
   ],
   shadcn: {
     /**
