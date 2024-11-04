@@ -55,6 +55,8 @@
 <script lang="ts" setup>
 import { useMediaQuery } from "@vueuse/core";
 import { Menu } from "lucide-vue-next";
+
+
 const isDesktop = useMediaQuery("(min-width: 1024px)");
 
 interface NavItem {
@@ -72,6 +74,7 @@ const defaultItems: NavItem[] = [
 ];
 
 const items = props.items ?? defaultItems;
+
 </script>
 
 <style></style>
