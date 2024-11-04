@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-auto">
     <!---- AppNavBar ----->
-    <div class="nav-bar fixed w-full top-0 left-0 h-16 z-50">
+    <div class="nav-bar fixed w-full top-0 left-0 h-16">
       <AppNavBar :items="navItems" />
     </div>
 
@@ -35,11 +35,16 @@ onMounted(() => {
         y: [-100, 0],
       },
       {
-        duration: 0.5,
+        duration: 0.8,
+        delay: 0.5,
         easing: "ease-in-out",
       });
   });
 
 </script>
 
-<style></style>
+<style scoped>
+.nav-bar{
+  z-index: 999;
+}
+</style>
