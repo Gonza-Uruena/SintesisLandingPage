@@ -1,117 +1,120 @@
 <template>
   <div
-    class="relative our-work-container flex flex-col items-center w-full h-full gap-8 py-4"
+    ref="scrollTarget"
+    class="scrollable-container relative flex flex-col w-full h-full"
   >
     <div
-      v-show="isOverlayVisible"
-      class="our-work-text-overlay sticky w-screen h-screen top-0 -left-8 flex justify-center items-center bg-section-background-dark z-50"
+      class="sticky-section sticky top-0 w-full h-auto flex flex-col justify-center items-center"
     >
-      <h1
-        class="our-work-text-anim opacity-0 text-2xl md:text-3xl lg:text-7xl font-semibold font-title text-center"
+      <!-- Layer 1 -->
+      <div
+        class="opacity-0 section-title-layer-1 w-full h-screen text-center flex justify-center items-center"
       >
-        Más allá de diseño: <br>
-        <span class="font-accent italic">Esencia y transformación.</span>
-      </h1>
-    </div>
+        <h1 class="section-title-top-layer-1 text-6xl font-bold font-title">
+          Más allá de diseño: <br />
+          <span
+            class="section-title-bottom-layer-1 inline-block font-accent italic font-semibold"
+          >
+            Esencia y transformación
+          </span>
+        </h1>
+      </div>
 
-    <h1
-      class="sticky text-2xl md:text-3xl lg:text-4xl font-bold font-title self-start"
-    >
-      Más allá de diseño: <br>
-      Esencia y transformación.
-    </h1>
-    <div class="w-full grid grid-cols-8 grid-rows-4 gap-4 place-items-center">
+      <!-- Layer 2 -->
       <div
-        class="our-work-text-anim-2 w-full h-full bg-slate-600 flex items-center justify-center col-start-1 row-start-1 col-span-4 row-span-2 z-20"
+        class="section-container-layer-2 w-full h-auto flex flex-col justify-center items-center"
       >
-        <img
-          src="/public/img/Cards/TalhackBanner1.png"
-          alt="Talhack Banner 1"
-          class="w-full h-auto object-cover"
-        >
-      </div>
-      <div
-        class="w-full h-full bg-slate-400 flex items-center justify-center col-span-2 row-span-2 col-start-1 row-start-3 hover:col-span-8 hover:col-start-1 hover:row-start-1"
-      >
-        2
-      </div>
-      <div
-        class="w-full h-full bg-slate-400 flex items-center justify-center col-span-2 row-span-2 col-start-3 row-start-3"
-      >
-        3
-      </div>
-      <div
-        class="w-full h-full bg-slate-400 flex items-center justify-center col-span-4 row-span-2 col-start-5 row-start-1"
-      >
-        4
-      </div>
-      <div
-        class="w-full h-full bg-slate-400 flex items-center justify-center col-span-4 row-span-2 col-start-5 row-start-3"
-      >
-        5
+        <div class="section-grid-1 w-full h-screen">
+          <div
+            class="w-full h-5/6 grid grid-cols-8 grid-rows-4 gap-4 place-items-center text-black"
+          >
+            <div class="w-full h-full col-span-4 row-span-2 rounded-md overflow-hidden">
+              <img src="https://picsum.photos/400/200" alt="random" class="w-full h-full object-fit" >
+            </div>
+            <div class="w-full h-full col-span-2 row-span-2 col-start-1 row-start-3">
+              <img src="https://picsum.photos/200/200" alt="random" class="w-full h-full object-fit" >
+            </div>
+            <div class="w-full h-full col-span-2 row-span-2 col-start-3 row-start-3">
+              <img src="https://picsum.photos/200/200" alt="random" class="w-full h-full object-fit" >
+            </div>
+            <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-1">
+              <img src="https://picsum.photos/400/200" alt="random" class="w-full h-full object-fit" >
+            </div>
+            <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-3">
+              <img src="https://picsum.photos/400/200" alt="random" class="w-full h-full object-fit" >
+            </div>
+          </div>
+        </div>
+
+        <div class="section-grid-2 w-full h-screen">
+          <div
+            class="w-full h-5/6 grid grid-cols-8 grid-rows-4 gap-4 place-items-center text-black"
+          >
+            <div class="w-full h-full col-span-4 row-span-2 rounded-md overflow-hidden">
+              <img src="https://picsum.photos/400/200" alt="random" class="w-full h-full object-fit" >
+            </div>
+            <div class="w-full h-full col-span-2 row-span-2 col-start-1 row-start-3">
+              <img src="https://picsum.photos/200/200" alt="random" class="w-full h-full object-fit" >
+            </div>
+            <div class="w-full h-full col-span-2 row-span-2 col-start-3 row-start-3">
+              <img src="https://picsum.photos/200/200" alt="random" class="w-full h-full object-fit" >
+            </div>
+            <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-1">
+              <img src="https://picsum.photos/400/200" alt="random" class="w-full h-full object-fit" >
+            </div>
+            <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-3">
+              <img src="https://picsum.photos/400/200" alt="random" class="w-full h-full object-fit" >
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <!-- ------------------Starting Animation -------------------- -->
 </template>
 
 <script setup>
-import { animate, inView, timeline } from "motion";
+import { scroll, timeline } from "motion";
 
-const isOverlayVisible = ref(true);
-
-const overlayAnimation = [
+const scrollTarget = ref(null);
+const ourWorkTimeline = [
   [
-    ".our-work-text-anim",
-    { transform: ["translateX(-50%)"], opacity: [1, 0] },
-    { duration: 1, delay: 0.5, easing: "ease-in-out" },
+    ".section-title-layer-1",
+    { opacity: [null, 1, 1], scale: [0.4, 1, 1] },
+    { duration: 2, easing: [0.25, 0.46, 0.45, 0.94] },
   ],
   [
-    ".our-work-text-overlay",
-    { opacity: [1, 0] },
-    { duration: 0.8, delay: 0.5, easing: "ease-in-out" },
+    ".section-title-layer-1",
+    {
+      x: [null, "-37%", "-37%", "-37%"],
+      y: [null, "-24%", "-24%"],
+      scale: [null, 0.6, 0.6],
+    },
+    { duration: 2.5, easing: "ease-in-out", at: "-1" },
+  ],
+  [
+    ".section-title-bottom-layer-1",
+    { x: [null, "20px", "20px", "20px", "20px"] },
+    { duration: 4, easing: "ease-in-out", at: "<" },
+  ],
+  [
+    ".section-grid-1",
+    { opacity: [0, 1], y: ["-20%", "-60%"], x: ["100%", 0] },
+    { duration: 1, easing: "ease-in-out", at: "-3.8" },
+  ],
+  [
+    ".section-grid-2",
+    { opacity: [0, 1], y: ["-60%", "-60%"], x: ["-100%", 0] },
+    { duration: 1, easing: "ease-in-out", at: "+0.8" },
   ],
 ];
 
 onMounted(() => {
-  inView(".our-work-text-anim", (info) => {
-    animate(
-      info.target,
-      {
-        opacity: [0, 1],
-        scale: [0.4, 1],
-      },
-      {
-        duration: 0.8,
-        delay: 0.5,
-        easing: "ease-in-out",
-      }
-    );
+  /* Scroll Animation */
+  scroll(timeline(ourWorkTimeline, { duration: 11 }), {
+    target: scrollTarget.value,
+    offset: ["-400px 0px", "end end"],
   });
-
-  inView(
-    ".our-work-text-anim-2",
-    async () => {
-      await timeline(overlayAnimation, { duration: 1 }).finished.then(() => {
-        isOverlayVisible.value = false;
-        console.log("finished");
-      });
-    },
-    {
-      margin: "0px 0px -20px 0px",
-    }
-  );
 });
 </script>
 
-<style scoped>
-.progress {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: red;
-  bottom: 50px;
-  transform: scaleX(0);
-}
-</style>
+<style scoped></style>

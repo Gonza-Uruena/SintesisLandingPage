@@ -6,13 +6,13 @@
     </AppSection>
     <!-- Proyectos en acción -->
 
-    <AppSection class="bg-section-background-dark text-white px-8 pt-20 mb-20">
+    <AppSection class="bg-section-background-dark h-[450vh] text-white px-8 py-20 mb-20">
       <AppOurWorks />
     </AppSection>
 
     <!-- Nuestro ADN -->
 
-    <AppSection class="bg-section-background-light text-white px-8 mb-20">
+    <AppSection class="bg-section-background-light text-white px-8 -mt-96 mb-20">
       <AppOurADN />
     </AppSection>
 
