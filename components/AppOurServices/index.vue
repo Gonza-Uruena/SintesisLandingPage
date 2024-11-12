@@ -18,15 +18,12 @@
       class="w-1/2 h-full flex justify-center items-center gap-4"
     >
     <Swiper
+    ref="swiperRef"
     class="w-full h-full"
     :direction="'vertical'"
     :modules="[SwiperAutoplay, SwiperEffectCreative]"
     :slides-per-view="1"
     :loop="true"
-    :autoplay="{
-      delay: 5000,
-      disableOnInteraction: false,
-    }"
   >
     <SwiperSlide v-for="slide in slidesContent" :key="slide.id" >
       <AppOurServicesSlides 
@@ -40,8 +37,14 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 
+
+const swiperRef = ref(null);
+
+onMounted(() => {
+  console.log(swiperRef.value);
+});
 const slidesContent = [
   {
     id: 1,

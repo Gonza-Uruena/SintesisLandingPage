@@ -11,7 +11,7 @@
         class="opacity-0 section-title-layer-1 w-full h-screen text-center flex justify-center items-center"
       >
         <h1 class="section-title-top-layer-1 text-6xl font-bold font-title">
-          Más allá de diseño: <br />
+          Más allá de diseño: <br>
           <span
             class="section-title-bottom-layer-1 inline-block font-accent italic font-semibold"
           >
@@ -24,7 +24,7 @@
       <div
         class="section-container-layer-2 w-full h-auto flex flex-col justify-center items-center"
       >
-        <div class="section-grid-1 w-full h-screen">
+        <div class="section-grid-1 opacity-0 w-full h-screen">
           <div
             class="w-full h-5/6 grid grid-cols-8 grid-rows-4 gap-4 place-items-center text-black"
           >
@@ -46,7 +46,7 @@
           </div>
         </div>
 
-        <div class="section-grid-2 w-full h-screen">
+        <div class="section-grid-2 opacity-0 w-full h-screen">
           <div
             class="w-full h-5/6 grid grid-cols-8 grid-rows-4 gap-4 place-items-center text-black"
           >
