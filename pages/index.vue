@@ -6,7 +6,7 @@
     </AppSection>
     <!-- Proyectos en acción -->
 
-    <AppSection class="bg-section-background-dark h-[450vh] text-white px-8 py-20 mb-20">
+    <AppSection class="bg-section-background-dark h-[451vh] text-white px-8 py-20 mb-20">
       <AppOurWorks />
     </AppSection>
 
@@ -18,7 +18,7 @@
 
     <!-- Nuestras Crisalidas -->
 
-    <AppSection class="bg-section-background-dark h-screen text-white px-8">
+    <AppSection class="bg-section-background-dark text-white px-8">
       <AppOurServices />
     </AppSection>
 

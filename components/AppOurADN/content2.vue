@@ -8,7 +8,7 @@
     >
       <div class="w-3/6 h-full flex flex-col justify-center gap-8 pr-32">
         <h1 class="text-black text-5xl leading-tight font-title font-semibold">
-          Nuestra <br />
+          Nuestra <br>
           cultura
         </h1>
         <p class="text-black text-xl font-body">

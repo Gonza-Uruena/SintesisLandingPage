@@ -87,18 +87,24 @@ const ourADNTimeline = [
   [
     ".overlay-image",
     {
-      scaleX: [1, 0.8, 0.735, 0.635, 0.535, 0.535],
-      scaleY: [1,0.8, 0.733,0.633, 0.533,0.533],
-      x: [null, "+5%", "+10%", "+15%", "+20.25%"],
-      y: [null, "-2%", "-3%", "-4%", "-3.5%"],
+      scaleX: [1, 0.8, 0.635, 0.535, 0.535],
+      scaleY: [1,0.8, 0.633,0.533, 0.533],
+       x: [null, null, null, "+10.25%", "+20.25%"],
+      y: [null, null, null, "-2.5%", "-3.5%"],
     },
     { duration: 4, easing: "ease-in-out", at: "+1.5" },
   ],
   [
-    ".section-image",
-    { opacity: [0, 0, 1, 1, 1, 1] },
-    { duration: 6, easing: "ease-in-out", at: "+0.6" },
+    ".section-container",
+    { opacity: [0, 1, 1, 1, 1, 1] },
+    { duration: 6, easing: "ease-in-out", at: "-2" },
   ],
+   [
+    ".section-image",
+    { opacity: [0, 1, 1, 1, 1, 1] },
+    { duration: 6, easing: "ease-in-out", at: "-4.9" },
+  ],
+  
 
 
 ];
@@ -107,7 +113,7 @@ onMounted(() => {
   /* Scroll Animation */
   scroll(timeline(ourADNTimeline, { duration: 11 }), {
     target: scrollTarget.value,
-    offset: ["-400px 0px", "end end"],
+    offset: ["-400px 0px", "end 10px"],
   });
 });
 </script>
