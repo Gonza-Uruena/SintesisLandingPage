@@ -14,11 +14,11 @@
             Proporcionamos un enfoque humanizado, centrado en las personas y sus
             sueños.
           </p>
-         <!--  <AppButton 
+          <AppButton 
           class="hero-button opacity-0"
           @click="console.log('hola')"> 
             Transformemos
-          </AppButton> -->
+          </AppButton>
         </div>
       </div>
 </template>
