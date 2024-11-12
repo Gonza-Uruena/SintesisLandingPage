@@ -43,7 +43,8 @@
 const swiperRef = ref(null);
 
 onMounted(() => {
-  console.log(swiperRef.value);
+
+  
 });
 const slidesContent = [
   {
