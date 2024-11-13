@@ -14,11 +14,11 @@
             Proporcionamos un enfoque humanizado, centrado en las personas y sus
             sueños.
           </p>
-          <AppButton 
+<!--           <AppButton 
           class="hero-button opacity-0"
           @click="console.log('hola')"> 
             Transformemos
-          </AppButton>
+          </AppButton> -->
         </div>
       </div>
 </template>
@@ -31,7 +31,7 @@ import { timeline } from "motion";
   [".hero-button", { opacity: [0, 1], scale: [0, 1] }, { at: '-0.5', duration: 1 }],
 
  ]
-onMounted(() => {
+onMounted(async () => {
   timeline(heroAnimation , {
     duration: 1})
 
