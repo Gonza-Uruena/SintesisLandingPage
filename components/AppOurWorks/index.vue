@@ -29,19 +29,54 @@
             class="w-full h-5/6 grid grid-cols-8 grid-rows-4 gap-4 place-items-center text-black"
           >
             <div class="w-full h-full col-span-4 row-span-2 rounded-md overflow-hidden">
-              <img src="https://picsum.photos/400/200" alt="random" class="w-full h-full object-fit" >
+              <NuxtImg 
+              preload
+              src="https://picsum.photos/400/200"
+              loading="lazy"
+              alt="Random"
+              sizes="100vw md:100vw"
+              class="w-full h-full object-cover"
+              />
             </div>
             <div class="w-full h-full col-span-2 row-span-2 col-start-1 row-start-3">
-              <img src="https://picsum.photos/200/200" alt="random" class="w-full h-full object-fit" >
+              <NuxtImg 
+              preload
+              src="https://picsum.photos/200/200"
+              loading="lazy"
+              alt="Random"
+              sizes="100vw md:200px"
+              class="w-full h-full object-cover"
+              />
             </div>
             <div class="w-full h-full col-span-2 row-span-2 col-start-3 row-start-3">
-              <img src="https://picsum.photos/200/200" alt="random" class="w-full h-full object-fit" >
+              <NuxtImg 
+              preload
+              src="https://picsum.photos/200/200"
+              loading="lazy"
+              alt="Random"
+              sizes="100vw md:200px"
+              class="w-full h-full object-cover"
+              />
             </div>
             <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-1">
-              <img src="https://picsum.photos/400/200" alt="random" class="w-full h-full object-fit" >
+              <NuxtImg 
+              preload
+              src="https://picsum.photos/400/200"
+              loading="lazy"
+              alt="Random"
+              sizes="100vw md:100vw"
+              class="w-full h-full object-cover"
+              />
             </div>
             <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-3">
-              <img src="https://picsum.photos/400/200" alt="random" class="w-full h-full object-fit" >
+              <NuxtImg 
+              preload
+              src="https://picsum.photos/400/200"
+              loading="lazy"
+              alt="Random"
+              sizes="100vw md:100vw"
+              class="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -51,19 +86,54 @@
             class="w-full h-5/6 grid grid-cols-8 grid-rows-4 gap-4 place-items-center text-black"
           >
             <div class="w-full h-full col-span-4 row-span-2 rounded-md overflow-hidden">
-              <img src="https://picsum.photos/400/200" alt="random" class="w-full h-full object-fit" >
+              <NuxtImg 
+              preload
+              src="https://picsum.photos/400/200"
+              loading="lazy"
+              alt="Random"
+              sizes="100vw md:100vw"
+              class="w-full h-full object-cover"
+              />
             </div>
             <div class="w-full h-full col-span-2 row-span-2 col-start-1 row-start-3">
-              <img src="https://picsum.photos/200/200" alt="random" class="w-full h-full object-fit" >
+              <NuxtImg 
+              preload
+              src="https://picsum.photos/200/200"
+              loading="lazy"
+              alt="Random"
+              sizes="100vw md:200px"
+              class="w-full h-full object-cover"
+              />
             </div>
             <div class="w-full h-full col-span-2 row-span-2 col-start-3 row-start-3">
-              <img src="https://picsum.photos/200/200" alt="random" class="w-full h-full object-fit" >
+              <NuxtImg 
+              preload
+              src="https://picsum.photos/200/200"
+              loading="lazy"
+              alt="Random"
+              sizes="100vw md:200px"
+              class="w-full h-full object-cover"
+              />
             </div>
             <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-1">
-              <img src="https://picsum.photos/400/200" alt="random" class="w-full h-full object-fit" >
+              <NuxtImg 
+              preload
+              src="https://picsum.photos/400/200"
+              loading="lazy"
+              alt="Random"
+              sizes="100vw md:100vw"
+              class="w-full h-full object-cover"
+              />
             </div>
             <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-3">
-              <img src="https://picsum.photos/400/200" alt="random" class="w-full h-full object-fit" >
+              <NuxtImg 
+              preload
+              src="https://picsum.photos/400/200"
+              loading="lazy"
+              alt="Random"
+              sizes="100vw md:100vw"
+              class="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

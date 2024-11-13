@@ -44,11 +44,14 @@
           </p>
         </div>
         <div class="section-image opacity-0 w-4/6 h-auto flex justify-center items-center">
-          <img
-            src="/public/img/Nuestro ADN/LosQueTransforman.jpg"
-            alt="Fotografia grupal de los integrantes"
-            class="w-full h-full rounded-xl object-contain"
-          >
+          <NuxtImg
+          preload
+          src="/img/Nuestro ADN/LosQueTransforman.jpg"
+          loading="lazy"
+          alt="Fotografia grupal de los integrantes"
+          sizes="100vw md:100vw"
+          class="rounded-xl"
+          />
         </div>
       </div>
     </div>

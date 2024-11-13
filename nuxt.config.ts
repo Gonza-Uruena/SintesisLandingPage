@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/fonts',
     'nuxt-swiper',
+    '@nuxt/image',
   ],
   shadcn: {
     prefix: '',

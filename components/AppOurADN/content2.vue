@@ -27,7 +27,7 @@
           :class="n === 8 ? 'top-card' : 'starting-deck'"
           class="absolute w-80 h-96 flex justify-center items-center"
         >
-          <AppCardVariant1 @click="console.log('card number ' + n)" />
+          <AppCardVariant2 @click="console.log('card number ' + n)" />
         </div>
       </div>
     </div>
