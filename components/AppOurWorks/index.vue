@@ -1,7 +1,7 @@
 <template>
   <div
     ref="scrollTarget"
-    class="scrollable-container relative flex flex-col w-full h-full"
+    class="scrollable-container relative flex flex-col w-full  h-[450vh]"
   >
     <div
       class="sticky-section sticky top-0 w-full h-auto flex flex-col justify-center items-center"

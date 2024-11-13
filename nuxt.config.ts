@@ -11,9 +11,6 @@ export default defineNuxtConfig({
     'nuxt-swiper',
   ],
   shadcn: {
-    /**
-     * Prefix for all the imported component
-     */
     prefix: '',
     /**
      * Directory that the component lives in.
@@ -24,6 +21,28 @@ export default defineNuxtConfig({
   fonts: {
     defaults: {
       weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-    }
+      fallbacks: {
+        'serif': ['Times New Roman'],
+        'sans-serif': ['Arial'],
+        'monospace': ['Courier New'],
+        'cursive': [],
+        'fantasy': [],
+        'system-ui': [
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'Helvetica Neue',
+          'Arial',
+        ],
+        'ui-serif': ['Times New Roman'],
+        'ui-sans-serif': ['Arial'],
+        'ui-monospace': ['Courier New'],
+        'ui-rounded': [],
+        'emoji': [],
+        'math': [],
+        'fangsong': [],
+      },
+    },
+    
   },
 })

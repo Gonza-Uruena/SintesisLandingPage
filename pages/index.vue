@@ -14,7 +14,7 @@
     <!-- Proyectos en acción -->
 
     <AppSection
-      class="bg-section-background-dark h-[451vh] text-white px-8 py-20 mb-20"
+      class="bg-section-background-dark text-white px-8 py-20 mb-20"
     >
       <Suspense>
         <template #default>
