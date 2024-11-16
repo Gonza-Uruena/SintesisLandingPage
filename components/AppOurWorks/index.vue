@@ -24,11 +24,11 @@
       <div
         class="section-container-layer-2 w-full h-auto flex flex-col justify-center items-center"
       >
-        <div class="section-grid-1 opacity-0 w-full h-screen">
+        <div class="section-grid-1 opacity-0 w-full h-screen mb-20">
           <div
-            class="w-full h-5/6 grid grid-cols-8 grid-rows-4 gap-4 place-items-center text-black"
+            class="w-full h-full grid grid-cols-8 grid-rows-4 gap-4 place-items-center text-black"
           >
-            <div class="w-full h-full col-span-4 row-span-2 rounded-md overflow-hidden">
+            <div class="w-full h-full col-span-4 row-span-2 rounded-2xl overflow-hidden">
               <NuxtImg 
               preload
               src="https://picsum.photos/400/200"
@@ -38,7 +38,7 @@
               class="w-full h-full object-cover"
               />
             </div>
-            <div class="w-full h-full col-span-2 row-span-2 col-start-1 row-start-3">
+            <div class="w-full h-full col-span-2 row-span-2 col-start-1 row-start-3 rounded-2xl overflow-hidden">
               <NuxtImg 
               preload
               src="https://picsum.photos/200/200"
@@ -48,7 +48,7 @@
               class="w-full h-full object-cover"
               />
             </div>
-            <div class="w-full h-full col-span-2 row-span-2 col-start-3 row-start-3">
+            <div class="w-full h-full col-span-2 row-span-2 col-start-3 row-start-3 rounded-2xl overflow-hidden">
               <NuxtImg 
               preload
               src="https://picsum.photos/200/200"
@@ -58,7 +58,7 @@
               class="w-full h-full object-cover"
               />
             </div>
-            <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-1">
+            <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-1 rounded-2xl overflow-hidden">
               <NuxtImg 
               preload
               src="https://picsum.photos/400/200"
@@ -68,7 +68,7 @@
               class="w-full h-full object-cover"
               />
             </div>
-            <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-3">
+            <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-3 rounded-2xl overflow-hidden">
               <NuxtImg 
               preload
               src="https://picsum.photos/400/200"
@@ -83,9 +83,9 @@
 
         <div class="section-grid-2 opacity-0 w-full h-screen">
           <div
-            class="w-full h-5/6 grid grid-cols-8 grid-rows-4 gap-4 place-items-center text-black"
+            class="w-full h-full grid grid-cols-8 grid-rows-4 gap-4 place-items-center text-black"
           >
-            <div class="w-full h-full col-span-4 row-span-2 rounded-md overflow-hidden">
+            <div class="w-full h-full col-span-4 row-span-2 rounded-2xl overflow-hidden">
               <NuxtImg 
               preload
               src="https://picsum.photos/400/200"
@@ -95,7 +95,7 @@
               class="w-full h-full object-cover"
               />
             </div>
-            <div class="w-full h-full col-span-2 row-span-2 col-start-1 row-start-3">
+            <div class="w-full h-full col-span-2 row-span-2 col-start-1 row-start-3 rounded-2xl overflow-hidden">
               <NuxtImg 
               preload
               src="https://picsum.photos/200/200"
@@ -105,7 +105,7 @@
               class="w-full h-full object-cover"
               />
             </div>
-            <div class="w-full h-full col-span-2 row-span-2 col-start-3 row-start-3">
+            <div class="w-full h-full col-span-2 row-span-2 col-start-3 row-start-3 rounded-2xl overflow-hidden">
               <NuxtImg 
               preload
               src="https://picsum.photos/200/200"
@@ -115,7 +115,7 @@
               class="w-full h-full object-cover"
               />
             </div>
-            <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-1">
+            <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-1 rounded-2xl overflow-hidden">
               <NuxtImg 
               preload
               src="https://picsum.photos/400/200"
@@ -125,7 +125,7 @@
               class="w-full h-full object-cover"
               />
             </div>
-            <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-3">
+            <div class="w-full h-full col-span-4 row-span-2 col-start-5 row-start-3 rounded-2xl overflow-hidden">
               <NuxtImg 
               preload
               src="https://picsum.photos/400/200"

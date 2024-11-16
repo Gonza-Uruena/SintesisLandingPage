@@ -22,7 +22,7 @@
         <img
           src="/public/img/Nuestro ADN/LosQueTransforman.jpg"
           alt="Fotografia grupal de los integrantes"
-          class="w-full h-full rounded-xl overflow-hidden object-cover pt-20"
+          class="w-full h-full rounded-xl overflow-hidden object-cover"
         >
       </div>
 
@@ -32,12 +32,12 @@
       >
         <div class="w-3/6 h-full flex flex-col justify-center gap-8 pr-10">
           <h1
-            class="text-black text-5xl leading-tight font-title font-semibold"
+            class="text-black text-4xl leading-tight font-title font-semibold"
           >
             Los que <br>
             transforman
           </h1>
-          <p class="text-black text-xl font-body">
+          <p class="text-black font-body">
             Síntesis nació con una visión clara sobre transformar ideas y sueños
             en empresas con aspiración. Colaboramos para transformar ideas en
             experiencias que resuenan con la esencia de quienes las viven.
@@ -90,10 +90,10 @@ const ourADNTimeline = [
   [
     ".overlay-image",
     {
-      scaleX: [1, 0.8, 0.635, 0.535, 0.535],
-      scaleY: [1,0.8, 0.633,0.533, 0.533],
-       x: [null, null, null, "+10.25%", "+20.25%"],
-      y: [null, null, null, "-2.5%", "-3.5%"],
+      scaleX: [1, 0.8, 0.635, 0.535, 0.5],
+      scaleY: [1,0.8, 0.633,0.533, 0.495],
+       x: [null, null, null, "+10.25%", "+18.95%"],
+      y: [null, null, null, "-0.5%", "-0.5%"],
     },
     { duration: 4, easing: "ease-in-out", at: "+1.5" },
   ],

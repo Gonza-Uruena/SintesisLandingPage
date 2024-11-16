@@ -4,12 +4,12 @@
     class="relative w-full h-[450vh]"
   >
   <div class="sticky top-0 w-full h-screen flex justify-center items-center gap-10">
-    <div class="our-services-left-container w-1/2 h-full flex flex-col justify-center gap-10">
+    <div class="our-services-left-container w-1/2 h-full flex flex-col justify-center gap-6">
       <h1 class="self-start font-title font-bold text-4xl leading-snug">
         Nuestras <br>
         Crisálidas
       </h1>
-      <p class="self-start text-lg">
+      <p class="self-start">
         Trabajamos bajo el concepto “one-Stop-Shop” <br>
          ofreciendo servicios integrales que te ayudarán <br>
           a optimizar costos y tiempos en tu proyecto.
@@ -43,7 +43,7 @@ const scrollTarget = ref(null);
 const ourServicesTimeline = [
   [
      ".our-services-right-container ",
-    { opacity: [0,1,1,1, 1,1,1,1], y: ["20%","0%","-63%","-127%","-197%", "-260%"] },
+    { opacity: [0,1,1,1, 1,1,1,1], y: ["20%","0%","-63%","-127%","-197%", "-268%"] },
     { duration: 1, easing: "ease-out" }, 
   ],
   [
@@ -57,7 +57,7 @@ const ourServicesTimeline = [
 onMounted(() => {
   scroll(timeline(ourServicesTimeline, { duration: 11 }), {
     target: scrollTarget.value,
-    offset: ["-300px 0px", "end end"],
+    offset: ["-150px 0px", "end end"],
   });
 });
 

@@ -1,6 +1,6 @@
 <template>
   <form
-    class="space-y-12 max-w-lg w-full"
+    class="space-y-8 max-w-lg w-full"
     @submit.prevent="handleSubmit"
   >
     <div>

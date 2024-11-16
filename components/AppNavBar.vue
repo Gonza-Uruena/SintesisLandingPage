@@ -1,6 +1,6 @@
 <template>
   <ClientOnly>
-    <nav v-if="isDesktop" class="bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 p-4">
+    <nav v-if="isDesktop" class="bg-transparent p-4">
       <div class="container mx-auto flex items-center">
         <div class="text-white text-lg font-semibold">
           <img src="/public/img/LogoDesktop.png" alt="Logo" class="w-30 h-12">

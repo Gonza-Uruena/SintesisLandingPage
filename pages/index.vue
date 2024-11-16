@@ -14,7 +14,7 @@
     <!-- Proyectos en acción -->
 
     <AppSection
-      class="bg-section-background-dark text-white px-8 py-20 mb-20"
+      class="bg-section-background-dark text-white px-[72px] py-20 mb-20"
     >
       <Suspense>
         <template #default>
@@ -29,7 +29,7 @@
     <!-- Nuestro ADN -->
 
     <AppSection
-      class="bg-section-background-light text-white px-8 -mt-96 mb-20"
+      class="bg-section-background-light text-white px-[72px] -mt-96 mb-20"
     >
       <Suspense>
         <template #default>
@@ -43,7 +43,7 @@
 
     <!-- Nuestras Crisalidas -->
 
-    <AppSection class="bg-section-background-dark text-white px-8">
+    <AppSection class="bg-section-background-dark text-white px-[72px]">
       <Suspense>
         <template #default>
           <AppOurServices />
@@ -56,7 +56,7 @@
 
     <!-- Hablemos -->
 
-    <AppSection class="bg-section-background-light text-black px-32 mb-20">
+    <AppSection class="bg-section-background-light text-black px-[72px] mb-20">
       <Suspense>
         <template #default>
           <AppLetsTalk />
