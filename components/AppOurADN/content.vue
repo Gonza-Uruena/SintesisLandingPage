@@ -1,6 +1,6 @@
 
 <template>
-  <div ref="scrollTarget" class="relative w-full h-[3000px]">
+  <div ref="scrollTarget" class="relative w-full h-[3000px] px-[72px]">
     <div
       class="sticky top-0 w-full h-screen grid grid-cols-2 gap-10 place-items-center"
     >

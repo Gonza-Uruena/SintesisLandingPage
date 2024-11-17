@@ -6,7 +6,7 @@
     <p class="self-start text-lg">
       {{props.description}}
     </p>
-    <div class="self-start w-full flex flex-wrap gap-4">
+    <div class="self-start min-w-[550px] flex flex-wrap gap-4">
       <div
         v-for="tag in props.tags"
         :key="tag as string"

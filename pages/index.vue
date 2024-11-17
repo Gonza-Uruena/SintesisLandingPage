@@ -29,7 +29,7 @@
     <!-- Nuestro ADN -->
 
     <AppSection
-      class="bg-section-background-light text-white px-[72px] -mt-96 mb-20"
+      class="bg-section-background-light text-white -mt-96 mb-20"
     >
       <Suspense>
         <template #default>
@@ -47,6 +47,19 @@
       <Suspense>
         <template #default>
           <AppOurServices />
+        </template>
+        <template #fallback>
+          <div>Loading...</div>
+        </template>
+      </Suspense>
+    </AppSection>
+
+    <!-- Testimonials -->
+
+    <AppSection class="bg-section-background-light text-black mb-20">
+      <Suspense>
+        <template #default>
+          <AppTestimonials />
         </template>
         <template #fallback>
           <div>Loading...</div>
@@ -86,6 +99,9 @@ const AppOurServices = defineAsyncComponent(
 );
 const AppLetsTalk = defineAsyncComponent(
   () => import("../components/AppLetsTalk/index.vue")
+);
+const AppTestimonials = defineAsyncComponent(
+  () => import("../components/AppTestimonials/index.vue")
 );
 </script>
 
