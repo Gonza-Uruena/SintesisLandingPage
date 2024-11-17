@@ -19,7 +19,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import { animate } from "motion";
 const navItems = [
   { label: 'Proyectos en Acción', href: '/' },	

@@ -21,7 +21,7 @@
       class="absolute top-0 left-1/2 translate-x-[-50%] w-0.5 h-screen bg-white bg-gradient-to-b from-30% from-section-background-dark via-white to-70% to-section-background-dark"
     />
     <!-- Carousel -->
-    <div class="our-services-right-container  w-1/2 h-full flex flex-col items-center mt-96 gap-40">
+    <div class="our-services-right-container opacity-0 w-1/2 h-full flex flex-col items-center mt-96 gap-40">
       <div v-for="slide in slidesContent" :key="slide.id" class="w-full h-full">
         <AppOurServicesSlides
           :id="'slide-item' +slide.id"
@@ -37,7 +37,7 @@
 </template>
 
 <script setup>
-import { timeline, scroll } from "motion";
+import { animate, scroll } from "motion";
 
 const scrollTarget = ref(null);
 const ourServicesTimeline = [
@@ -55,7 +55,7 @@ const ourServicesTimeline = [
 ];
 
 onMounted(() => {
-  scroll(timeline(ourServicesTimeline, { duration: 11 }), {
+  scroll(animate(ourServicesTimeline, { duration: 11 }), {
     target: scrollTarget.value,
     offset: ["-150px 0px", "end end"],
   });

@@ -143,7 +143,7 @@
 </template>
 
 <script setup>
-import { scroll, timeline } from "motion";
+import { scroll, animate } from "motion";
 
 const scrollTarget = ref(null);
 const ourWorkTimeline = [
@@ -180,7 +180,7 @@ const ourWorkTimeline = [
 
 onMounted(() => {
   /* Scroll Animation */
-  scroll(timeline(ourWorkTimeline, { duration: 11 }), {
+  scroll(animate(ourWorkTimeline, { duration: 11 }), {
     target: scrollTarget.value,
     offset: ["-400px 0px", "end end"],
   });

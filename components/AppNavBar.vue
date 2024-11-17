@@ -2,19 +2,25 @@
   <ClientOnly>
     <nav v-if="isDesktop" class="bg-transparent p-4">
       <div class="container mx-auto flex items-center">
-        <div class="text-white text-lg font-semibold">
-          <img src="/public/img/LogoDesktop.png" alt="Logo" class="w-30 h-12">
+        <div
+          class="text-white flex justify-center items-center text-lg font-semibold gap-4"
+        >
+          <img src="/public/img/Logo.svg" alt="Logo" class="nav-bar-logo w-full h-10" >
         </div>
-
-        <div class="flex space-x-4 ml-32 bg-section-background-light rounded-full px-16 py-2">
-          <a
-            v-for="(item, index) in items"
-            :key="index"
-            :href="item.href"
-            class="text-black hover:bg-sintesis-light-blue hover:rounded-full px-3 py-2 text-sm font-medium"
+        <div class="nav-bar-items w-auto h-full flex items-center">
+          <img src="/public/img/LogoName.svg" alt="Logo" class="w-32 h-10" >
+          <div
+            class="flex space-x-4 ml-32 bg-section-background-light rounded-full px-16 py-1"
           >
-            {{ item.label }}
-          </a>
+            <a
+              v-for="(item, index) in items"
+              :key="index"
+              :href="item.href"
+              class="text-black hover:bg-sintesis-light-blue hover:rounded-full px-3 py-2 text-sm font-medium"
+            >
+              {{ item.label }}
+            </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -56,7 +62,6 @@
 import { useMediaQuery } from "@vueuse/core";
 import { Menu } from "lucide-vue-next";
 
-
 const isDesktop = useMediaQuery("(min-width: 1024px)");
 
 interface NavItem {
@@ -74,6 +79,10 @@ const defaultItems: NavItem[] = [
 ];
 
 const items = props.items ?? defaultItems;
+
+ /* Animation */
+
+
 
 </script>
 

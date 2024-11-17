@@ -40,7 +40,7 @@
 </template>
 
 <script setup>
-import { timeline, scroll } from "motion";
+import { animate, scroll } from "motion";
 
 const scrollTarget = ref(null);
 const isHovering = ref(false);
@@ -137,7 +137,7 @@ const ourADNCarousel = [
 
 onMounted(() => {
   scroll(
-    timeline(ourADNCarousel, { duration: 11 }),
+    animate(ourADNCarousel, { duration: 11 }),
     {
       container: scrollTarget.value,
       offset: ["0px 0px", "end -200px"],

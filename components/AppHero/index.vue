@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-import { timeline } from "motion";
+import { animate } from "motion";
 
  const heroAnimation = [
   [".hero-section", { opacity: [0, 1], y: [200, 0] }, {duration: 1}],
@@ -32,7 +32,7 @@ import { timeline } from "motion";
 
  ]
 onMounted(async () => {
-  timeline(heroAnimation , {
+  animate(heroAnimation , {
     duration: 1})
 
   });

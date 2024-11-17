@@ -50,7 +50,7 @@
 </template>
 
 <script setup>
-import { timeline, inView } from "motion";
+import { animate, inView } from "motion";
 
 const testimonialsTimeline = [
   [
@@ -98,7 +98,7 @@ const testimonialsTimeline = [
   [
     ".testimonial-overlay-card-3",
     {
-      x: ["0%", "-200%", "500%"],
+      x: ["0%", "-200%", "450%"],
       scale: [1, 1.4, 1],
       rotateY: [0, 90, 180, 90],
       opacity: [1, 1, 1, 1, 1, 0],
@@ -109,7 +109,7 @@ const testimonialsTimeline = [
   [
     ".testimonial-overlay-card-2",
     {
-      x: ["0%", "200%", "-500%"],
+      x: ["0%", "200%", "-450%"],
       scale: [1, 1.4, 1],
       rotateY: [0, -90, -180, -90],
       opacity: [1, 1, 1, 1, 1, 0],
@@ -120,7 +120,7 @@ const testimonialsTimeline = [
   [
     ".testimonial-overlay-card-4",
     {
-      x: ["0%", "200%", "-500%"],
+      x: ["0%", "200%", "-450%"],
       scale: [1, 1.4, 1],
       rotateY: [0, -90, -180, -90],
       opacity: [1, 1, 1, 1, 1, 0],
@@ -131,7 +131,7 @@ const testimonialsTimeline = [
   [
     ".testimonial-overlay-card-1",
     {
-      x: ["0%", "-200%", "500%"],
+      x: ["0%", "-200%", "450%"],
       scale: [1, 1.4, 1],
       rotateY: [0, 90, 180, 90],
       opacity: [1, 1, 1, 1, 1, 0],
@@ -142,7 +142,7 @@ const testimonialsTimeline = [
   [
     ".testimonial-overlay-card-5",
     {
-      x: ["0%", "-200%", "500%"],
+      x: ["0%", "-200%", "450%"],
       scale: [1, 1.4, 1],
       rotateY: [0, 90, 180, 90],
       opacity: [1, 1, 1, 1, 1, 0],
@@ -158,7 +158,7 @@ const testimonialsTimeline = [
       x: ["100%", 0],
       opacity: [0, 1, 1, 1],
     },
-    { duration: 0.25, easing: "ease-in-out", at: "-0.09" },
+    { duration: 0.25, easing: "ease-in-out", at: "-0.08" },
   ],
   [
     ".testimonials-row-2",
@@ -196,7 +196,7 @@ const testimonialsTimeline = [
 
 onMounted(() => {
   inView(".testimonial-overlay-card-1", () => {
-    timeline(testimonialsTimeline, { duration: 8 });
+    animate(testimonialsTimeline, { duration: 8 });
   });
 });
 </script>

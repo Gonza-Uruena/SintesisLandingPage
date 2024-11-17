@@ -78,7 +78,7 @@
           <div>Loading...</div>
         </template>
       </Suspense>
-    </AppSection>
+    </AppSection>  
   </div>
 </template>
 

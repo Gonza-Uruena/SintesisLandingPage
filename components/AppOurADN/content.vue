@@ -59,7 +59,7 @@
 </template>
 
 <script setup>
-import { timeline, scroll } from "motion";
+import { animate, scroll } from "motion";
 
 const scrollTarget = ref(null);
 const ourADNTimeline = [
@@ -114,7 +114,7 @@ const ourADNTimeline = [
 
 onMounted(() => {
   /* Scroll Animation */
-  scroll(timeline(ourADNTimeline, { duration: 11 }), {
+  scroll(animate(ourADNTimeline, { duration: 11 }), {
     target: scrollTarget.value,
     offset: ["-400px 0px", "end 10px"],
   });

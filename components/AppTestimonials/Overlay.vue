@@ -9,8 +9,7 @@
       class="relative w-56 h-32 bg-pink-200 rounded-xl opacity-0"
     >
       <NuxtImg
-        preload
-        loading="lazy"
+        
         :src="`/img/Testimonials/Testimonial-img-${n}.png`"
         alt="Testimonial-img-1"
         class="w-56 h-32 object-fill"
