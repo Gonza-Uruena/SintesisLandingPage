@@ -150,7 +150,7 @@ const ourWorkTimeline = [
   [
     ".section-title-layer-1",
     { opacity: [null, 1, 1], scale: [0.4, 1, 1] },
-    { duration: 2, easing: [0.25, 0.46, 0.45, 0.94] },
+    { duration: 2, ease: [0.25, 0.46, 0.45, 0.94] },
   ],
   [
     ".section-title-layer-1",
@@ -159,22 +159,22 @@ const ourWorkTimeline = [
       y: [null, "-24%", "-24%"],
       scale: [null, 0.6, 0.6],
     },
-    { duration: 2.5, easing: "ease-in-out", at: "-1" },
+    { duration: 2.5, ease: "easeInOut", at: "-1" },
   ],
   [
     ".section-title-bottom-layer-1",
     { x: [null, "20px", "20px", "20px", "20px"] },
-    { duration: 4, easing: "ease-in-out", at: "<" },
+    { duration: 4, ease: "easeInOut", at: "<" },
   ],
   [
     ".section-grid-1",
     { opacity: [0, 1], y: ["-20%", "-60%"], x: ["100%", 0] },
-    { duration: 1, easing: "ease-in-out", at: "-3.8" },
+    { duration: 1, ease: "easeInOut", at: "-3.8" },
   ],
   [
     ".section-grid-2",
     { opacity: [0, 1], y: ["-60%", "-60%"], x: ["-100%", 0] },
-    { duration: 1, easing: "ease-in-out", at: "+0.8" },
+    { duration: 1, ease: "easeInOut", at: "+0.8" },
   ],
 ];
 

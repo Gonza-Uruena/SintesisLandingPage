@@ -59,7 +59,7 @@ const testimonialsTimeline = [
       opacity: [0, 1, 1, 1, 1, 1],
       rotateY: [-90, -90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     },
-    { duration: 1, easing: "ease-out" },
+    { duration: 1, ease: "easeOut" },
   ],
   [
     ".testimonial-overlay-card-2",
@@ -67,7 +67,7 @@ const testimonialsTimeline = [
       opacity: [0, 1, 1, 1, 1, 1],
       rotateY: [-90, -90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     },
-    { duration: 1, easing: "ease-out", at: "-0.98" },
+    { duration: 1, ease: "easeOut", at: "-0.98" },
   ],
   [
     ".testimonial-overlay-card-4",
@@ -75,7 +75,7 @@ const testimonialsTimeline = [
       opacity: [0, 1, 1, 1, 1, 1],
       rotateY: [-90, -90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     },
-    { duration: 1, easing: "ease-out", at: "-0.98" },
+    { duration: 1, ease: "easeOut", at: "-0.98" },
   ],
   [
     ".testimonial-overlay-card-1",
@@ -83,7 +83,7 @@ const testimonialsTimeline = [
       opacity: [0, 1, 1, 1, 1, 1],
       rotateY: [-90, -90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     },
-    { duration: 1, easing: "ease-out", at: "-0.98" },
+    { duration: 1, ease: "easeOut", at: "-0.98" },
   ],
   [
     ".testimonial-overlay-card-5",
@@ -91,64 +91,59 @@ const testimonialsTimeline = [
       opacity: [0, 1, 1, 1, 1, 1],
       rotateY: [-90, -90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     },
-    { duration: 1, easing: "ease-out", at: "-0.98" },
+    { duration: 1, ease: "easeOut", at: "-0.98" },
   ],
 
   /* Second Part */
   [
     ".testimonial-overlay-card-3",
     {
-      x: ["0%", "-200%", "450%"],
+      x: ["0%", "-200%", "500%"],
       scale: [1, 1.4, 1],
       rotateY: [0, 90, 180, 90],
       opacity: [1, 1, 1, 1, 1, 0],
-      transformOrigin: "center center",
     },
-    { duration: 0.25, easing: "ease-in-out", at: "-0.85" },
+    { duration: 0.25, ease: "easeInOut", at: "-0.85" },
   ],
   [
     ".testimonial-overlay-card-2",
     {
-      x: ["0%", "200%", "-450%"],
+      x: ["0%", "200%", "-500%"],
       scale: [1, 1.4, 1],
       rotateY: [0, -90, -180, -90],
       opacity: [1, 1, 1, 1, 1, 0],
-      transformOrigin: "center center",
     },
-    { duration: 0.25, easing: "ease-in-out", at: "<" },
+    { duration: 0.25, ease: "easeInOut", at: "<" },
   ],
   [
     ".testimonial-overlay-card-4",
     {
-      x: ["0%", "200%", "-450%"],
+      x: ["0%", "200%", "-500%"],
       scale: [1, 1.4, 1],
       rotateY: [0, -90, -180, -90],
       opacity: [1, 1, 1, 1, 1, 0],
-      transformOrigin: "center center",
     },
-    { duration: 0.25, easing: "ease-in-out", at: "<" },
+    { duration: 0.25, ease: "easeInOut", at: "<" },
   ],
   [
     ".testimonial-overlay-card-1",
     {
-      x: ["0%", "-200%", "450%"],
+      x: ["0%", "-200%", "500%"],
       scale: [1, 1.4, 1],
       rotateY: [0, 90, 180, 90],
       opacity: [1, 1, 1, 1, 1, 0],
-      transformOrigin: "center center",
     },
-    { duration: 0.25, easing: "ease-in-out", at: "<" },
+    { duration: 0.25, ease: "easeInOut", at: "<" },
   ],
   [
     ".testimonial-overlay-card-5",
     {
-      x: ["0%", "-200%", "450%"],
+      x: ["0%", "-200%", "500%"],
       scale: [1, 1.4, 1],
       rotateY: [0, 90, 180, 90],
-      opacity: [1, 1, 1, 1, 1, 0],
-      transformOrigin: "center center",
+      opacity: [1, 1, 1, 1, 1, 0]
     },
-    { duration: 0.25, easing: "ease-in-out", at: "<" },
+    { duration: 0.25, ease: "easeInOut", at: "<" },
   ],
 
   /* Third Part */
@@ -158,7 +153,7 @@ const testimonialsTimeline = [
       x: ["100%", 0],
       opacity: [0, 1, 1, 1],
     },
-    { duration: 0.25, easing: "ease-in-out", at: "-0.08" },
+    { duration: 0.25, ease: "easeInOut", at: "-0.08" },
   ],
   [
     ".testimonials-row-2",
@@ -166,7 +161,7 @@ const testimonialsTimeline = [
       x: ["-100%", 0],
       opacity: [0, 1, 1, 1],
     },
-    { duration: 0.25, easing: "ease-in-out", at: "<" },
+    { duration: 0.25, ease: "easeInOut", at: "<" },
   ],
   [
     ".testimonials-row-4",
@@ -174,7 +169,7 @@ const testimonialsTimeline = [
       x: ["-100%", 0],
       opacity: [0, 1, 1, 1],
     },
-    { duration: 0.25, easing: "ease-in-out", at: "<" },
+    { duration: 0.25, ease: "easeInOut", at: "<" },
   ],
   [
     ".testimonials-row-1",
@@ -182,7 +177,7 @@ const testimonialsTimeline = [
       x: ["100%", 0], 
       opacity: [0, 1, 1, 1],
     },
-    { duration: 0.25, easing: "ease-in-out", at: "<" },
+    { duration: 0.25, ease: "easeInOut", at: "<" },
   ],
   [
     ".testimonials-row-5",
@@ -190,7 +185,7 @@ const testimonialsTimeline = [
       x: ["100%", 0],
       opacity: [0, 1, 1, 1],
     },
-    { duration: 0.25, easing: "ease-in-out", at: "<" },
+    { duration: 0.25, ease: "easeInOut", at: "<" },
   ],
 ];
 

@@ -44,12 +44,12 @@ const ourServicesTimeline = [
   [
      ".our-services-right-container ",
     { opacity: [0,1,1,1, 1,1,1,1], y: ["20%","0%","-63%","-127%","-197%", "-268%"] },
-    { duration: 1, easing: "ease-out" }, 
+    { duration: 1, ease: "easeOut" }, 
   ],
   [
      ".our-services-left-container ",
     { opacity: [0,1,1,1, 1,1,1,1], x: ["-30%","0%","0%","0%","0%","0%","0%", "0%"] },
-    { duration: 1, easing: "ease-in-out", at: "<" }, 
+    { duration: 1, ease: "easeInOut", at: "<" }, 
   ],
 
 ];

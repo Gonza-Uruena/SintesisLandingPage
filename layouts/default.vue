@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-auto">
     <!---- AppNavBar ----->
-    <div class="nav-bar fixed w-full top-0 left-0 h-16">
+    <div class="nav-bar opacity-0 fixed w-full top-0 left-0 h-16">
       <AppNavBar :items="navItems" />
     </div>
 
@@ -28,8 +28,11 @@ const navItems = [
   { label: 'Hablemos', href: '/' },
 ]
 
-onMounted(() => {
-    animate(".nav-bar", 
+
+ /* Animation */
+
+onMounted(async () => {
+     animate(".nav-bar", 
       {
         opacity: [0, 1],
         y: [-100, 0],
@@ -39,6 +42,7 @@ onMounted(() => {
         delay: 0.5,
         easing: "ease-in-out",
       });
+ 
   });
 
 </script>

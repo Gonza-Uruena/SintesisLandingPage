@@ -69,7 +69,7 @@ const ourADNTimeline = [
       opacity: [0, 1, 1, 1, 1, 1],
       y: ["-150%", "-100%", "-50%", "-30%", "-10%", 0],
     },
-    { duration: 4, easing: "ease-in-out" },
+    { duration: 4, ease: "easeInOut" },
   ],
   [
     ".overlay-text-container",
@@ -77,7 +77,7 @@ const ourADNTimeline = [
       opacity: [1, 1, 1, 1, 0, 0],
       x: [0, "10%", "30%", "70%", "100%", "150%"],
     },
-    { duration: 4, easing: "ease-in-out" },
+    { duration: 4, ease: "easeInOut" },
   ],
   [
     ".overlay-image",
@@ -85,7 +85,7 @@ const ourADNTimeline = [
       opacity: [0, 1, 1, 1, 1, 1],
       x: ["-150%", "-100%", "-70%", "-30%", "-10%", 0],
     },
-    { duration: 4, easing: "ease-in-out", at: "<" },
+    { duration: 4, ease: "easeInOut", at: "<" },
   ],
   [
     ".overlay-image",
@@ -95,17 +95,17 @@ const ourADNTimeline = [
        x: [null, null, null, "+10.25%", "+18.95%"],
       y: [null, null, null, "-0.5%", "-0.5%"],
     },
-    { duration: 4, easing: "ease-in-out", at: "+1.5" },
+    { duration: 4, ease: "easeInOut", at: "+1.5" },
   ],
   [
     ".section-container",
     { opacity: [0, 1, 1, 1, 1, 1] },
-    { duration: 6, easing: "ease-in-out", at: "-2" },
+    { duration: 6, ease: "easeInOut", at: "-2" },
   ],
    [
     ".section-image",
     { opacity: [0, 1, 1, 1, 1, 1] },
-    { duration: 6, easing: "ease-in-out", at: "-4.9" },
+    { duration: 6, ease: "easeInOut", at: "-4.9" },
   ],
   
 

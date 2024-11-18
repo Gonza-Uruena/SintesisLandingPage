@@ -51,7 +51,7 @@ const ourADNCarousel = [
       x: [0, "-60%", "-35%", "-35%", "-35%", "-35%", "-35%"],
       rotate: [0, -6, 0, -0, -0, -0, -0],
     },
-    { duration: 0.45, easing: "ease-in-out" },
+    { duration: 0.45, ease: "easeInOut" },
   ],
   [
     ".starting-deck",
@@ -61,7 +61,7 @@ const ourADNCarousel = [
       rotate: [0, 20, 20, 20, 20, 20],
       zIndex: [0, 0, 12, 12, 12, 10],
     },
-    { duration: 0.5, at: "<", easing: "ease-in-out" },
+    { duration: 0.5, at: "<", ease: "easeInOut" },
   ],
   [
     "#carousel-slide-7",
@@ -71,7 +71,7 @@ const ourADNCarousel = [
       rotate: [null, -6, -0, -0, -0, -0],
       zIndex: [null, null, 1, 1, 1, 1],
     },
-    { duration: 0.5, at: "-0.2", easing: "ease-in-out" },
+    { duration: 0.5, at: "-0.2", ease: "easeInOut" },
   ],
   [
     "#carousel-slide-6",
@@ -81,7 +81,7 @@ const ourADNCarousel = [
       rotate: [null, -6, -0, -0, -0, -0],
       zIndex: [null, null, 2, 2, 2, 2],
     },
-    { duration: 0.5, at: "-0.2", easing: "ease-in-out" },
+    { duration: 0.5, at: "-0.2", ease: "easeInOut" },
   ],
   [
     "#carousel-slide-5",
@@ -91,7 +91,7 @@ const ourADNCarousel = [
       rotate: [null, -6, -0, -0, -0, -0],
       zIndex: [null, null, 3, 3, 3, 3],
     },
-    { duration: 0.5, at: "-0.2", easing: "ease-in-out" },
+    { duration: 0.5, at: "-0.2", ease: "easeInOut" },
   ],
   [
     "#carousel-slide-4",
@@ -101,7 +101,7 @@ const ourADNCarousel = [
       rotate: [null, -6, -0, -0, -0, -0],
       zIndex: [null, null, 4, 4, 4, 4],
     },
-    { duration: 0.5, at: "-0.2", easing: "ease-in-out" },
+    { duration: 0.5, at: "-0.2", ease: "easeInOut" },
   ],
   [
     "#carousel-slide-3",
@@ -111,7 +111,7 @@ const ourADNCarousel = [
       rotate: [null, -6, -0, -0, -0, -0],
       zIndex: [null, null, 5, 5, 5, 5],
     },
-    { duration: 0.5, at: "-0.2", easing: "ease-in-out" },
+    { duration: 0.5, at: "-0.2", ease: "easeInOut" },
   ],
   [
     "#carousel-slide-2",
@@ -121,7 +121,7 @@ const ourADNCarousel = [
       rotate: [null, -6, -0, -0, -0, -0],
       zIndex: [null, null, 6, 6, 6, 6],
     },
-    { duration: 0.5, at: "-0.2", easing: "ease-in-out" },
+    { duration: 0.5, at: "-0.2", ease: "easeInOut" },
   ],
   [
     "#carousel-slide-1",
@@ -131,7 +131,7 @@ const ourADNCarousel = [
       rotate: [null, -6, -0, -0, -0, -0],
       zIndex: [null, null, 7, 7, 7, 7],
     },
-    { duration: 0.6, at: "-0.2", easing: "ease-in-out" },
+    { duration: 0.6, at: "-0.2", ease: "easeInOut" },
   ],
 ];
 
