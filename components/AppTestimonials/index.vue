@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative w-full h-auto mt-20 flex flex-col justify-center items-center gap-10"
+    class="testimonials-container relative w-full h-auto mt-20 flex flex-col justify-center items-center gap-10"
   >
     <!-- Testimonials Overlay animation -->
     <div
@@ -190,9 +190,9 @@ const testimonialsTimeline = [
 ];
 
 onMounted(() => {
-  inView(".testimonial-overlay-card-1", () => {
+  inView(".testimonials-container", () => {
     animate(testimonialsTimeline, { duration: 8 });
-  });
+  },{ margin: '-400px 0px -200px 0px'});
 });
 </script>
 

@@ -24,13 +24,18 @@
           class="sticky-container sticky top-0 w-full h-screen flex justify-center items-center"
         >
           <div
-            v-for="n in 8"
-            :id="'carousel-slide-' + n"
-            :key="n"
-            :class="n === 8 ? 'top-card' : 'starting-deck'"
-            class="absolute w-80 h-96 flex justify-center items-center overflow-x-visible"
+            v-for="card in cardsContent"
+            :id="'carousel-slide-' + card.id"
+            :key="card.id"
+            :class="card.id === 7 ? 'top-card' : 'starting-deck'"
+            class="absolute w-80 h-96 flex justify-center items-center overflow-x-visible p-6"
           >
-            <AppCard @click="console.log('card number ' + n)" />
+            <AppCard 
+            @click="console.log('card number ' + n)" 
+            :name="card.name"
+            :role="card.role"
+            :image="card.image"
+            />
           </div>
         </div>
       </div>
@@ -42,6 +47,53 @@
 <script setup>
 import { animate, scroll } from "motion";
 
+
+const cardsContent = [
+  {
+    id: 1,
+    name: "Abigail Bertelli",
+    role: "UX Designer",
+    image: "/img/Nuestro ADN/Abigail.png",
+  },
+  {
+    id: 2,
+    name: "Gonzalo Urueña",
+    role: "FrontEnd Developer",
+    image: "/img/Nuestro ADN/Gonzalo.png",
+  },
+  {
+    id: 3,
+    name: "Matias Loaiza",
+    role: "Branding Designer",
+    image: "/img/Nuestro ADN/Matias.png",
+  },
+  {
+    id: 4,
+    name: "Oriana Gomez",
+    role: "FrontEnd Developer",
+    image: "/img/Nuestro ADN/Oriana.png",
+  },
+  {
+    id: 5,
+    name: "Lucia Caponni",
+    role: "Ux Designer",
+    image: "/img/Nuestro ADN/Lucia.png",
+  },
+  {
+    id: 6,
+    name: "Emilia Marcatili",
+    role: "Ux Writer",
+    image: "/img/Nuestro ADN/Emilia.png",
+  },
+   {
+    id: 7,
+    name: "Rosario Daurat",
+    role: "Graphic Designer",
+    image: "/img/Nuestro ADN/Rosario.png",
+  },
+
+]
+
 const scrollTarget = ref(null);
 const isHovering = ref(false);
 const ourADNCarousel = [
@@ -51,7 +103,7 @@ const ourADNCarousel = [
       x: [0, "-60%", "-35%", "-35%", "-35%", "-35%", "-35%"],
       rotate: [0, -6, 0, -0, -0, -0, -0],
     },
-    { duration: 0.45, ease: "easeInOut" },
+    { duration: 0.45, ease: "easeInOut", },
   ],
   [
     ".starting-deck",
@@ -59,7 +111,7 @@ const ourADNCarousel = [
       x: [0, "80%", "80%", "80%", "80%", "80%"],
       y: [0, "20%", "20%", "20%", "20%", "20%"],
       rotate: [0, 20, 20, 20, 20, 20],
-      zIndex: [0, 0, 12, 12, 12, 10],
+      zIndex: [10],
     },
     { duration: 0.5, at: "<", ease: "easeInOut" },
   ],
@@ -69,17 +121,18 @@ const ourADNCarousel = [
       x: [null, "-60%", "-35%", "-35%", "-35%", "-35%"],
       y: [null, 0, 0, 0, 0, 0],
       rotate: [null, -6, -0, -0, -0, -0],
-      zIndex: [null, null, 1, 1, 1, 1],
+      zIndex: [10],
     },
     { duration: 0.5, at: "-0.2", ease: "easeInOut" },
   ],
+ 
   [
     "#carousel-slide-6",
     {
       x: [null, "-60%", "-35%", "-35%", "-35%", "-35%"],
       y: [null, 0, 0, 0, 0, 0],
       rotate: [null, -6, -0, -0, -0, -0],
-      zIndex: [null, null, 2, 2, 2, 2],
+      zIndex: [9],
     },
     { duration: 0.5, at: "-0.2", ease: "easeInOut" },
   ],
@@ -89,7 +142,7 @@ const ourADNCarousel = [
       x: [null, "-60%", "-35%", "-35%", "-35%", "-35%"],
       y: [null, 0, 0, 0, 0, 0],
       rotate: [null, -6, -0, -0, -0, -0],
-      zIndex: [null, null, 3, 3, 3, 3],
+      zIndex: [8],
     },
     { duration: 0.5, at: "-0.2", ease: "easeInOut" },
   ],
@@ -99,7 +152,7 @@ const ourADNCarousel = [
       x: [null, "-60%", "-35%", "-35%", "-35%", "-35%"],
       y: [null, 0, 0, 0, 0, 0],
       rotate: [null, -6, -0, -0, -0, -0],
-      zIndex: [null, null, 4, 4, 4, 4],
+      zIndex: [7],
     },
     { duration: 0.5, at: "-0.2", ease: "easeInOut" },
   ],
@@ -109,7 +162,7 @@ const ourADNCarousel = [
       x: [null, "-60%", "-35%", "-35%", "-35%", "-35%"],
       y: [null, 0, 0, 0, 0, 0],
       rotate: [null, -6, -0, -0, -0, -0],
-      zIndex: [null, null, 5, 5, 5, 5],
+      zIndex: [6],
     },
     { duration: 0.5, at: "-0.2", ease: "easeInOut" },
   ],
@@ -119,7 +172,7 @@ const ourADNCarousel = [
       x: [null, "-60%", "-35%", "-35%", "-35%", "-35%"],
       y: [null, 0, 0, 0, 0, 0],
       rotate: [null, -6, -0, -0, -0, -0],
-      zIndex: [null, null, 6, 6, 6, 6],
+      zIndex: [5],
     },
     { duration: 0.5, at: "-0.2", ease: "easeInOut" },
   ],
@@ -129,7 +182,7 @@ const ourADNCarousel = [
       x: [null, "-60%", "-35%", "-35%", "-35%", "-35%"],
       y: [null, 0, 0, 0, 0, 0],
       rotate: [null, -6, -0, -0, -0, -0],
-      zIndex: [null, null, 7, 7, 7, 7],
+      zIndex: [4],
     },
     { duration: 0.6, at: "-0.2", ease: "easeInOut" },
   ],

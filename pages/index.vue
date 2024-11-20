@@ -56,7 +56,7 @@
 
     <!-- Testimonials -->
 
-    <AppSection class="bg-section-background-light text-black mb-20">
+    <AppSection class="bg-section-background-light text-black mb-0">
       <Suspense>
         <template #default>
           <AppTestimonials />

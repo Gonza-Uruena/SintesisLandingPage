@@ -93,12 +93,10 @@ const handleScroll = (newY) => {
   if (newY > lastScrollY.value) {
     if (!isHidden.value) {
       isHidden.value = true
-      console.log('isHidden', isHidden.value)
     }
   } else {
     if (isHidden.value) {
       isHidden.value = false
-      console.log('isHidden', isHidden.value)
     }
   }
   
@@ -114,12 +112,6 @@ onUnmounted(() => {
   // Stop watching scroll position when the component is destroyed
   lastScrollY.value = 0
 })
-
-
-/* onMounted(async () => {
-  animate(navAnimation);
-}); */
-
 
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full flex flex-col justify-center items-center gap-10">
+  <div class="w-full h-full flex flex-col justify-center items-center">
     <AppOurADNContent />
     <AppOurADNContent2 />
   </div>
