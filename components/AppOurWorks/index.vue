@@ -1,7 +1,7 @@
 <template>
   <div
     ref="scrollTarget"
-    class="scrollable-container relative flex flex-col w-full  h-[450vh]"
+    class="scrollable-container relative flex flex-col w-full  h-[500vh]"
   >
     <div
       class="sticky-section sticky top-0 w-full h-auto flex flex-col justify-center items-center"
@@ -157,9 +157,9 @@ const ourWorkTimeline = [
     {
       x: [null, "-37%", "-37%", "-37%"],
       y: [null, "-24%", "-24%"],
-      scale: [null, 0.6, 0.6],
+      scale: [null, 0.65, 0.6],
     },
-    { duration: 2.5, ease: "easeInOut", at: "-1" },
+    { duration: 2.5, ease: [0.25, 0.46, 0.45, 0.94], at: "-1  " },
   ],
   [
     ".section-title-bottom-layer-1",
@@ -169,18 +169,18 @@ const ourWorkTimeline = [
   [
     ".section-grid-1",
     { opacity: [0, 1], y: ["-20%", "-60%"], x: ["100%", 0] },
-    { duration: 1, ease: "easeInOut", at: "-3.8" },
+    { duration: 1, ease: [0.34, 1.56, 0.64, 1], at: "-3.4" },
   ],
   [
     ".section-grid-2",
     { opacity: [0, 1], y: ["-60%", "-60%"], x: ["-100%", 0] },
-    { duration: 1, ease: "easeInOut", at: "+0.8" },
+    { duration: 1.1, ease: [0.34, 1.56, 0.64, 1], at: "+0.8" },
   ],
 ];
 
 onMounted(() => {
   /* Scroll Animation */
-  scroll(animate(ourWorkTimeline, { duration: 11 }), {
+  scroll(animate(ourWorkTimeline), {
     target: scrollTarget.value,
     offset: ["-400px 0px", "end end"],
   });

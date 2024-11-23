@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-full flex justify-center items-center flex-col">
     <!-- Hero section -->
-    <AppSection class="bg-black h-screen">
+    <AppSection class="bg-black h-screen overflow-hidden">
       <Suspense>
         <template #default>
           <AppHero />

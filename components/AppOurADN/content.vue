@@ -20,7 +20,7 @@
         class="overlay-image opacity-0 rounded-xsm col-start-1 col-end-3 row-start-1 w-screen h-full z-20 text-black flex justify-center items-center overflow-hidden"
       >
         <img
-          src="/public/img/Nuestro ADN/LosQueTransforman2.png"
+          src="/public/img/Nuestro ADN/LosQueTransforman .png"
           alt="Fotografia grupal de los integrantes"
           class="w-full h-full rounded-xl overflow-hidden object-cover"
         >
@@ -46,7 +46,7 @@
         <div class="section-image opacity-0 w-4/6 h-auto flex justify-center items-center">
           <NuxtImg
           preload
-          src="/img/Nuestro ADN/LosQueTransforman2.png"
+          src="/img/Nuestro ADN/LosQueTransforman.png"
           loading="lazy"
           alt="Fotografia grupal de los integrantes"
           sizes="100vw md:100vw"
@@ -69,7 +69,7 @@ const ourADNTimeline = [
       opacity: [0, 1, 1, 1, 1, 1],
       y: ["-150%", "-100%", "-50%", "-30%", "-10%", 0],
     },
-    { duration: 4, ease: "easeInOut" },
+    { duration: 4, ease: [0.6, -0.28, 0.735, 0.045] },
   ],
   [
     ".overlay-text-container",
@@ -77,7 +77,7 @@ const ourADNTimeline = [
       opacity: [1, 1, 1, 1, 0, 0],
       x: [0, "10%", "30%", "70%", "100%", "150%"],
     },
-    { duration: 4, ease: "easeInOut" },
+    { duration: 4, ease: [0.6, -0.28, 0.735, 0.045] },
   ],
   [
     ".overlay-image",
@@ -85,7 +85,7 @@ const ourADNTimeline = [
       opacity: [0, 1, 1, 1, 1, 1],
       x: ["-150%", "-100%", "-70%", "-30%", "-10%", 0],
     },
-    { duration: 4, ease: "easeInOut", at: "<" },
+    { duration: 4, ease: [0.6, -0.28, 0.735, 0.045], at: "<" },
   ],
   [
     ".overlay-image",
@@ -95,7 +95,7 @@ const ourADNTimeline = [
        x: [null, null, null, "+10.25%", "+18.95%"],
       y: [null, null, null, "-0.5%", "-0.5%"],
     },
-    { duration: 4, ease: "easeInOut", at: "+1.5" },
+    { duration: 4, ease: [0.34, 1.56, 0.64, 1], at: "+1.5" },
   ],
   [
     ".section-container",
