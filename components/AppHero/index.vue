@@ -1,6 +1,6 @@
 <template>
   <div
-    class="hero-container relativeflex flex-col md:flex-row justify-center items-center gap-4 text-center"
+    class="hero-container flex flex-col md:flex-row justify-center items-center gap-4 text-center"
   >
     <div
       class="relative w-full h-full flex justify-center items-center flex-col px-10 text-section-background-light gap-8 z-50"
@@ -18,69 +18,79 @@
         Proporcionamos un enfoque humanizado, centrado en las personas y sus
         sueños.
       </p>
-
     </div>
     <!-- Masks background -->
-    <!-- Masks smaller circle -->
     <div
-      class="hero-section-mask-1 absolute top-0 left-0 w-full h-screen flex justify-center items-center flex-col text-white gap-8 z-30 brightness-100 saturate-100 overflow-hidden"
+      class="masks-container opacity-0 w-full h-full absolute top-0 left-0 flex justify-center items-center"
     >
-      <div class="relative w-full h-full">
-        <div
-          v-for="image in heroImages"
-          :key="image.id"
-          :style="`z-index:${10 - image.id}`"
-          class="absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col"
-        >
-          <img
-            :src="image.src"
-            :alt="image.alt"
-            :class="`hero-mask-img-${image.id}`"
-            class="hero-mask opacity-0 scale-[1.2] w-[2732px] h-[2732px]"
-          />
-        </div>
-      </div>
-    </div>
-    <!-- Masks middle circle -->
-    <div
-      class="hero-section-mask-2 absolute top-0 left-0 w-full h-screen flex justify-center items-center flex-col text-white gap-8 z-20 brightness-100 saturate-100 grayscale overflow-hidden"
-    >
-    <div class="relative w-full h-full">
+      <!-- Masks smaller circle -->
       <div
-          v-for="image in heroImages"
-          :key="image.id"
-          :style="`z-index:${10 - image.id}`"
-          class="absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col"
-        >
-          <img
-            :src="image.src"
-            :alt="image.alt"
-            :class="`hero-mask-img-${image.id}`"
-            class="hero-mask opacity-0 scale-[1.2] w-[2732px] h-[2732px]"
-          />
+        class="hero-section-mask-1 absolute top-0 left-0 w-full h-screen flex justify-center items-center flex-col text-white gap-8 z-30 brightness-100 saturate-100 overflow-hidden"
+      >
+        <div class="relative w-full h-full">
+          <div
+            v-for="image in heroImages"
+            :key="image.id"
+            :style="`z-index:${10 - image.id}`"
+            class="absolute masks-images top-0 left-0 w-full h-full flex justify-center items-center flex-col"
+          >
+            <NuxtImg
+              preload
+              loading="eager"
+              :src="image.src"
+              :alt="image.alt"
+              :class="`hero-mask-img-${image.id}`"
+              class="hero-mask scale-[1.2] w-[2732px] h-[2732px]"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Masks middle circle -->
+      <div
+        class="hero-section-mask-2 absolute top-0 left-0 w-full h-screen flex justify-center items-center flex-col text-white gap-8 z-20 brightness-100 saturate-100 grayscale overflow-hidden"
+      >
+        <div class="relative w-full h-full">
+          <div
+            v-for="image in heroImages"
+            :key="image.id"
+            :style="`z-index:${10 - image.id}`"
+            class="absolute masks-images top-0 left-0 w-full h-full flex justify-center items-center flex-col"
+          >
+            <NuxtImg
+              preload
+              loading="eager"
+              :src="image.src"
+              :alt="image.alt"
+              :class="`hero-mask-img-${image.id}`"
+              class="hero-mask scale-[1.2] w-[2732px] h-[2732px]"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Masks bigger circle -->
+      <div
+        class="hero-section-mask-3 absolute top-0 left-0 w-full h-screen flex justify-center items-center flex-col text-white gap-8 z-10 overflow-hidden"
+      >
+        <div class="relative w-full h-full">
+          <div
+            v-for="image in heroImages"
+            :key="image.id"
+            :style="`z-index:${10 - image.id}`"
+            class="absolute masks-images top-0 left-0 w-full h-full flex justify-center items-center flex-col"
+          >
+            <NuxtImg
+              preload
+              loading="eager"
+              :src="image.src"
+              :alt="image.alt"
+              :class="`hero-mask-img-${image.id}`"
+              class="hero-mask scale-[1.2] w-[2732px] h-[2732px]"
+            />
+          </div>
         </div>
       </div>
     </div>
-    <!-- Masks bigger circle -->
-    <div
-      class="hero-section-mask-3 absolute top-0 left-0 w-full h-screen flex justify-center items-center flex-col text-white gap-8 z-10 overflow-hidden"
-    >
-    <div class="relative w-full h-full">
-        <div
-          v-for="image in heroImages"
-          :key="image.id"
-          :style="`z-index:${10 - image.id}`"
-          class="absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col"
-        >
-          <img
-            :src="image.src"
-            :alt="image.alt"
-            :class="`hero-mask-img-${image.id}`"
-            class="hero-mask opacity-0 scale-[1.2] w-[2732px] h-[2732px]"
-          />
-        </div>
-      </div>
-    </div>
+
     <!-- Masks end -->
 
     <!-- Background scroll trigger -->
@@ -112,7 +122,7 @@ const heroImages = [
     src: "/img/Hero/Test1.jpg",
     alt: "Logo",
   },
-   {
+  {
     id: 2,
     src: "/img/Hero/Test2.jpg",
     alt: "Logo",
@@ -132,9 +142,7 @@ const heroImages = [
     src: "/img/Hero/Test5.jpg",
     alt: "Logo",
   },
-   
-]
-
+];
 
 useEventListener(heroScrollTarget, "scroll", () => {
   const element = heroScrollTarget.value;
@@ -146,23 +154,59 @@ useEventListener(heroScrollTarget, "scroll", () => {
   } else if (element.scrollTop <= 0) {
     element.scrollTo({
       top: element.scrollHeight - 401,
-      
     });
   }
 });
 
 const heroAnimation = [
-  [".hero-section", { opacity: [0, 1], y: [200, 0] }, { duration: 1 }],
+  [
+    ".masks-container",
+    {
+      opacity: [0, 1],
+    },
+    {
+      duration: 2,
+      ease: "easeInOut",
+      at: "+0.1",
+    }
+  ],
+  [
+    ".masks-images",
+    {
+      rotate: [-180, 0],
+    },
+    {
+      duration: 1.4,
+      ease: [0.42, 0, 0.58, 1],
+      delay: stagger(0.1, { ease: [0.32, 0.23, 0.4, 0.9] }),
+      at: "<",
+    },
+  ],
+  [
+    ".hero-section",
+    {
+      opacity: [0, 1],
+      y: [200, 0],
+    },
+    {
+      duration: 1,
+    },
+  ],
   [
     ".hero-button",
-    { opacity: [0, 1], scale: [0, 1] },
-    { at: "-0.5", duration: 1 },
+    {
+      opacity: [0, 1],
+      scale: [0, 1],
+    },
+    {
+      at: "-0.5",
+      duration: 1,
+    },
   ],
 ];
 
 /* Animation Background */
 const heroAnimationBackground = [
-
   /* First Image */
   [
     ".hero-mask-img-1",
@@ -242,8 +286,8 @@ const heroAnimationBackground = [
       at: "<",
     },
   ],
-    /* Third Image */
-    [
+  /* Third Image */
+  [
     ".hero-mask-img-3",
     {
       rotate: [null, 720],
@@ -253,7 +297,6 @@ const heroAnimationBackground = [
       duration: 1.5,
       ease: [0.42, 0, 0.58, 1],
       delay: stagger(0.05, { ease: [0.32, 0.23, 0.4, 0.9] }),
-      
     },
   ],
   [
@@ -320,9 +363,9 @@ const heroAnimationBackground = [
       delay: stagger(0.1, { ease: [0.32, 0.23, 0.4, 0.9] }),
       at: "<",
     },
-    ],
-    /* Fifth Image / reset */
-    [
+  ],
+  /* Fifth Image / reset */
+  [
     ".hero-mask-img-5",
     {
       rotate: [null, 720],
@@ -359,12 +402,12 @@ const heroAnimationBackground = [
       delay: stagger(0.1, { ease: [0.32, 0.23, 0.4, 0.9] }),
       at: "<",
     },
-    ],
+  ],
 ];
 
-onMounted(() => {
-  animate(heroAnimation, {
-    duration: 1,
+onMounted(async () => {
+   await animate(heroAnimation, {
+    duration: 2,
   });
   scroll(animate(heroAnimationBackground), {
     container: heroScrollTarget.value,

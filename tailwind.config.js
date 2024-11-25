@@ -5,7 +5,7 @@ module.exports = {
   darkMode: ["class"],
   safelist: ["dark"],
   prefix: "",
-  
+  content: ['./pages/**/*.{vue,js}', './components/**/*.{vue,js}'],
   theme: {
     container: {
       center: true,

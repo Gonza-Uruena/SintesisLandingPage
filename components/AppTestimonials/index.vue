@@ -189,9 +189,9 @@ const testimonialsTimeline = [
   ],
 ];
 
-onMounted(() => {
-  inView(".testimonials-container", () => {
-    animate(testimonialsTimeline, { duration: 8 });
+onMounted(async () => {
+  inView(".testimonials-container", async () => {
+    await animate(testimonialsTimeline, { duration: 8 });
   },{ margin: '-400px 0px -200px 0px'});
 });
 </script>

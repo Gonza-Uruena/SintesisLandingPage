@@ -1,13 +1,13 @@
 <template>
   <div class="w-full h-full flex justify-center items-center flex-col">
     <!-- Hero section -->
-    <AppSection class="bg-black h-screen overflow-hidden">
+    <AppSection class="bg-black h-screen overflow-hidden relative">
       <Suspense>
         <template #default>
           <AppHero />
         </template>
         <template #fallback>
-          <div>Loading...</div>
+          <div class="animate-pulse bg-gray-300 h-64 w-full"></div>
         </template>
       </Suspense>
     </AppSection>

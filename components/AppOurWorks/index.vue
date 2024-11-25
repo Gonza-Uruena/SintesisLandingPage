@@ -178,9 +178,9 @@ const ourWorkTimeline = [
   ],
 ];
 
-onMounted(() => {
+onMounted(async () => {
   /* Scroll Animation */
-  scroll(animate(ourWorkTimeline), {
+   scroll(animate(ourWorkTimeline), {
     target: scrollTarget.value,
     offset: ["-400px 0px", "end end"],
   });

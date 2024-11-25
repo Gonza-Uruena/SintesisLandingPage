@@ -11,11 +11,13 @@
           @mouseenter="hoveredIndex = index"
           @mouseleave="hoveredIndex = null"
         >
-          <img
-            :src="item.imageUrl"
-            :alt="item.title"
-            class="w-56 h-32 object-fill transition-transform duration-500 group-hover:scale-110"
-          >
+        <NuxtImg 
+          loading="lazy"
+          :src="item.imageUrl"
+          :alt="item.title"
+          class="w-56 h-32 object-fill transition-transform duration-500 group-hover:scale-110"
+        />
+          
           <div
             class="absolute inset-0 bg-black bg-opacity-20 transition-opacity duration-500"
             :class="hoveredIndex === index ? 'opacity-100' : 'opacity-0'"

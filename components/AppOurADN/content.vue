@@ -19,11 +19,13 @@
       <div
         class="overlay-image opacity-0 rounded-xsm col-start-1 col-end-3 row-start-1 w-screen h-full z-20 text-black flex justify-center items-center overflow-hidden"
       >
-        <img
-          src="/public/img/Nuestro ADN/LosQueTransforman .png"
-          alt="Fotografia grupal de los integrantes"
-          class="w-full h-full rounded-xl overflow-hidden object-cover"
-        >
+        <NuxtImg 
+        loading="lazy"
+        src="/public/img/Nuestro ADN/LosQueTransforman.png"
+        alt="Fotografia grupal de los integrantes"
+        sizes="100vw md:100vw"
+        class="w-full h-full rounded-xl overflow-hidden object-cover"
+        />
       </div>
 
       <!-- Section -->
@@ -114,7 +116,7 @@ const ourADNTimeline = [
 
 onMounted(() => {
   /* Scroll Animation */
-  scroll(animate(ourADNTimeline, { duration: 11 }), {
+  scroll( animate(ourADNTimeline, { duration: 11 }), {
     target: scrollTarget.value,
     offset: ["-400px 0px", "end 10px"],
   });

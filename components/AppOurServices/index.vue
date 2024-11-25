@@ -54,7 +54,7 @@ const ourServicesTimeline = [
 
 ];
 
-onMounted(() => {
+onMounted(async () => {
   scroll(animate(ourServicesTimeline, { duration: 11 }), {
     target: scrollTarget.value,
     offset: ["-150px 0px", "end end"],
